@@ -2,7 +2,7 @@ using system;
 using UnityEngine;
 
 
-public float health = 100;
+public Float health = 100;
 new public rigidBody2D rb;
 new Vector2 coords;
 public Float movespeed = 3;
