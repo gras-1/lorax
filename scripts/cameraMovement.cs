@@ -13,16 +13,16 @@ public cameraMovement : MonoBehavour
   private float negCamCoordsY = pixelHeight - (pixelHeight * 2);
   
   if (playermove.coords.x == pixelWidth){
-    rigidbody.position = rigidbody.position * Time.FIxedDeltaTime * playermove.movespeed;
+    rigidbody.position.x = rigidbody.position.x * Time.FIxedDeltaTime * playermove.movespeed;
   }
   if (playermove.coords.x == negCamCoords){
-    rigidbody.position = rigidbody.position * Time.FIxedDeltaTime * playermove.movespeed;
+    rigidbody.position.x = rigidbody.position.x * Time.FIxedDeltaTime * playermove.movespeed;
   }
    if (playermove.coords.y == pixelHeight){
-     rigidbody.position = rigidbody.position * Time.FIxedDeltaTime * playermove.movespeed;
+     rigidbody.position.y = rigidbody.position.y * Time.FIxedDeltaTime * playermove.movespeed;
   }
    if (playermove.coords.y == negCamCoordsY){
-     rigidbody.position = rigidbody.position * Time.FIxedDeltaTime * playermove.movespeed;
+     rigidbody.position.y = rigidbody.position.y * Time.FIxedDeltaTime * playermove.movespeed;
   }
   
 }
